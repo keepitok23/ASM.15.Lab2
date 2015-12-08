@@ -71,7 +71,7 @@ sub st42
 			)
 		);
 		
-		print $q->hidden('person',$global->{'person'});
+		print $q->hidden('student',$global->{'student'});
 		print $q->end_form;
 		
 		
@@ -96,7 +96,7 @@ sub st42
 			
 			print $q->start_form;
 			print $q->hidden(-name => 'item', -value => $k);
-			print $q->hidden('person',$global->{'person'});
+			print $q->hidden('student',$global->{'student'});
 			
 			my @val = split(/::/,$hash{$k});
 			
